@@ -44,7 +44,7 @@ function App() {
 
   async function loadContract() {
         const abi = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[{"internalType":"string","name":"_sertifikat","type":"string"},{"internalType":"string","name":"_pemilik","type":"string"}],"name":"gantiPemilik","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"_sertifikat","type":"string"}],"name":"getInfoTanah","outputs":[{"internalType":"string","name":"sertifikat","type":"string"},{"internalType":"string","name":"pemilik","type":"string"},{"internalType":"string","name":"lokasi","type":"string"},{"internalType":"uint256","name":"luas","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"","type":"string"}],"name":"infoTanah","outputs":[{"internalType":"string","name":"pemilik","type":"string"},{"internalType":"string","name":"lokasi","type":"string"},{"internalType":"uint256","name":"luas","type":"uint256"},{"internalType":"uint256","name":"blockTime","type":"uint256"},{"internalType":"uint256","name":"blockNumber","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"_sertifikat","type":"string"},{"internalType":"string","name":"_pemilik","type":"string"},{"internalType":"string","name":"_lokasi","type":"string"},{"internalType":"uint256","name":"_luas","type":"uint256"}],"name":"registerTanah","outputs":[],"stateMutability":"nonpayable","type":"function"}];
-        const address = '0xfaaEE67Ff1FBCdE5F6c1d436Ce3bC4F9905942ae';
+        const address = '0xeF261E1e411E30B5121c8e96435Cc9723E6959cD';
         return await new web3.eth.Contract(abi,address);               
       }
 
